@@ -43,4 +43,14 @@ export class SidemenuComponent {
       ruta: './reactive/switches'
     }
   ]
+  public authMenu: MenuItem[] = [
+    {
+      texto: 'Iniciar sesión',
+      ruta: './auth/login'
+    },
+    {
+      texto: 'Registrarse',
+      ruta: './auth/registro'
+    }
+  ]
 }
