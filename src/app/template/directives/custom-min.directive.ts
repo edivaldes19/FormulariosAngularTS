@@ -9,11 +9,9 @@ import { FormControl, NG_VALIDATORS, Validator } from '@angular/forms'
     }]
 })
 export class CustomMinDirective implements Validator {
-    @Input() minimo!: number
+    @Input() public minimo!: number
     validate(control: FormControl) {
         const inputValue = control.value
-        return (inputValue < this.minimo)
-            ? { 'customMin': true }
-            : null
+        return inputValue < this.minimo ? { 'customMin': true } : null
     }
 }

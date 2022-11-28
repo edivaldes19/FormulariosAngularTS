@@ -19,7 +19,6 @@ export class BasicosComponent {
   }
   guardar() {
     this.miFormulario.resetForm({
-      producto: 'Donitas',
       precio: 0,
       existencias: 0
     })
